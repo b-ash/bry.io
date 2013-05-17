@@ -1,3 +1,4 @@
+
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -6,16 +7,86 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Countdown to Freedom</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="/static/css/app.css">
+    <title>Bryan Ash</title>
+    <meta name="viewport" content="width=720, height=500,initial-scale=0.5">
 
+    <link rel="stylesheet" href="/static/css/app.css">
     <script src="/static/js/vendor.js"></script>
     <script src="/static/js/app.js"></script>
-    <script>require('initialize');</script>
+    <script>require('coffee/index');</script>
 </head>
+
 <body>
-    <div id="main-page"></div>
+  <div id="container">
+    <hgroup id="name-header">
+        <h1>
+            <a href="">Bryan Ash</a>
+        </h1>
+        <h2 class="mid-color-text"><em>Software Engineer</em></h2>
+    </hgroup>
+
+    <div id="main" class="light" role="main">
+        <div class="outer-border"></div>
+        
+        <nav id="main-navigation" class="dark semi-light-text">
+            <ul>
+                <li title="Home">
+                    <a>
+                        <img src="img/icons/UI/user.png" alt="Home">
+                        <img class="active-image" src="img/icons/UI/user_dark.png" alt="Home">
+                    </a>
+                </li>
+                <li title="Resume">
+                    <a>
+                        <img src="/static/images/twitter_bad_url.png" alt="Resume">
+                        <img class="active-image" src="img/icons/UI/document_fill_dark.png" alt="Resume">
+                    </a>
+                </li>
+                <li title="Portfolio">
+                    <a>
+                        <img src="img/icons/UI/folder_fill.png" alt="Portfolio">
+                        <img class="active-image" src="img/icons/UI/folder_fill_dark.png" alt="Portfolio">
+                    </a>
+                </li>
+                <li title="Contact">
+                    <a>
+                        <img src="img/icons/UI/mail_alt.png" alt="Contact">
+                        <img class="active-image" src="img/icons/UI/mail_alt_dark.png" alt="Mail">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="scroll-wrapper">
+            <section id="home" class="semi-dark-text">
+                
+                <article id="about">
+                    <div class="inner-border"></div>
+                    <h1 class="dark-text">About Me</h1>
+                    
+                    <aside>
+                        <img src="/static/images/bash.jpg" alt="Profile" />
+                    </aside>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip.
+                    </p>
+                    <p class="secondary">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                        <a class="text-link" href="#">deserunt</a> mollit anim id est laborum. Sed ut perspiciatis 
+                        unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+                        eaque ipsa quae.
+                    </p>
+                </article>
+            </section>
+
+        </div>
+    </div>
+    <footer>
+        &copy; Copyright 2013.
+    </footer>
+  </div> 
 </body>
 </html>

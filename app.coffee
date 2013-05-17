@@ -16,8 +16,6 @@ exports.startServer = (port, path, callback) ->
             showStack: true
 
     # Serve our static assets
-    app.get '/', (req, res) ->
-        res.send 'Welcome'
     app.use express.static("#{__dirname}/#{path}")
 
     # Serve it up!

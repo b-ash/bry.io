@@ -1,6 +1,3 @@
 node_modules/
-stunnel/
 npm-debug.log
 .DS_Store
-test/
-creds.coffee

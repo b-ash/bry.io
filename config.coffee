@@ -10,32 +10,20 @@ module.exports.config =
                 'static/js/vendor.js': /^vendor/
             order:
                 before: [
-                    'vendor/scripts/console-helper.js'
                     'vendor/scripts/jquery.js'
-                    'vendor/scripts/jquery-ui-1.8.20.js'
-                    'vendor/scripts/jquery.blockui.js'
-                    'vendor/scripts/jquery.scrollpanel.js'
-                    'vendor/scripts/underscore.js'
-                    'vendor/scripts/backbone.js'
-                    'vendor/scripts/chosen.jquery.js'
-                    'vendor/scripts/moment.js'
                 ]
 
         stylesheets:
-            defaultExtension: 'styl'
+            defaultExtension: 'css'
             joinTo: 'static/css/app.css'
             order:
                 before: [
                     'vendor/styles/normalize.css'
-                    'vendor/styles/jquery-ui-1.8.20.css'
-                    'vendor/styles/chosen.css'
                     'vendor/styles/bootstrap.css'
                 ]
-                after: ['vendor/styles/helpers.css']
-
-        templates:
-            defaultExtension: 'hbs'
-            joinTo: 'static/js/app.js'
+                after: [
+                    'vendor/styles/helpers.css'
+                ]
 
     minify: no
 
