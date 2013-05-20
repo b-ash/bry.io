@@ -1,8 +1,118 @@
+@import nib
+
+html
+    min-width: 900px
+
 body
-    background: repeat url(/static/images/whitey.png)
+    background: repeat url(/static/images/diamond_upholstery.png)
 
 section
     background: repeat url(/static/images/grid.png)
 
-article
-    width: 560px
+#header
+    .top-pane
+        width: 100%
+        height: 50px
+        border-bottom: 3px solid #888
+
+    .bottom-pane
+        width: 100%
+        height: 50px
+        border-bottom: 3px solid #888
+        background: linear-gradient(top, #e2e2e2, #888, #e2e2e2)
+
+        #social-list
+            height: inherit
+            float: right
+            margin-right: 100px
+
+            ul
+                list-style: none
+                margin: 0
+                padding: 0
+
+                li
+                    display: inline
+                    margin: 0 5px
+
+                    .icon
+                        display: inline-block
+                        height: 32px 
+                        width: 32px
+                        margin-top: 10px
+
+                        img
+                            width: inherit
+                            height: inherit
+                            transition top 0.2s
+
+                            &:hover
+                                position: relative
+                                top: -5px
+
+                        &.facebook, &.twitter
+                            width: 30px 
+                            height: 29px
+
+    .name-pane
+        position: absolute
+        left: 100px
+        top: 20px
+        width: 445px
+        height: 110px
+        border: 3px solid #888
+        background: linear-gradient(top, #e2e2e2, #888, #e2e2e2)
+
+        > div
+            font-family: 'Shojumaru'
+            font-weight: 400
+            font-style: normal
+            margin-top: 27px
+            font-size: 60px
+            line-height: 60px
+
+#left-content
+    position: relative
+    display: inline-block
+    margin-left: 100px
+    margin-top: 60px
+    width: 600px
+    height: 400px
+
+    #profile
+        position: absolute
+        top: 0
+        left: 0
+        width: 200px
+        height: 200px
+        border-radius(100px)
+        overflow: hidden
+
+        > img
+            width: inherit
+            height: inherit
+
+    #blurb
+        position: absolute
+        top: 0
+        left: 210px
+        width: 385px
+        height: 200px
+        margin-left: 10px
+
+#right-content
+    position: relative
+    display: inline-block
+    margin-left: 50px
+    width: 320px
+    height: 400px
+
+    #social
+        position: absolute
+        top: 0
+        right: 0
+        width: 350px
+        height: 200px
+
+footer
+    margin-left: 100px

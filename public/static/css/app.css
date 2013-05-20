@@ -647,14 +647,137 @@ h2,h3
 {page-break-after:avoid
 }
 
-}body {
-  background: repeat url("/static/images/whitey.png");
+}html {
+  min-width: 900px;
+}
+body {
+  background: repeat url("/static/images/diamond_upholstery.png");
 }
 section {
   background: repeat url("/static/images/grid.png");
 }
-article {
-  width: 560px;
+#header .top-pane {
+  width: 100%;
+  height: 50px;
+  border-bottom: 3px solid #888;
+}
+#header .bottom-pane {
+  width: 100%;
+  height: 50px;
+  border-bottom: 3px solid #888;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e2e2e2), color-stop(0.33333333333333326, #888), color-stop(1, #e2e2e2));
+  background: -webkit-linear-gradient(top, #e2e2e2 0%, #888 33.33333333333333%, #e2e2e2 100%);
+  background: -moz-linear-gradient(top, #e2e2e2 0%, #888 33.33333333333333%, #e2e2e2 100%);
+  background: -o-linear-gradient(top, #e2e2e2 0%, #888 33.33333333333333%, #e2e2e2 100%);
+  background: -ms-linear-gradient(top, #e2e2e2 0%, #888 33.33333333333333%, #e2e2e2 100%);
+  background: linear-gradient(top, #e2e2e2 0%, #888 33.33333333333333%, #e2e2e2 100%);
+}
+#header .bottom-pane #social-list {
+  height: inherit;
+  float: right;
+  margin-right: 100px;
+}
+#header .bottom-pane #social-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#header .bottom-pane #social-list ul li {
+  display: inline;
+  margin: 0 5px;
+}
+#header .bottom-pane #social-list ul li .icon {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  margin-top: 10px;
+}
+#header .bottom-pane #social-list ul li .icon img {
+  width: inherit;
+  height: inherit;
+  -webkit-transition: top 0.2s;
+  -moz-transition: top 0.2s;
+  -o-transition: top 0.2s;
+  -ms-transition: top 0.2s;
+  transition: top 0.2s;
+}
+#header .bottom-pane #social-list ul li .icon img:hover {
+  position: relative;
+  top: -5px;
+}
+#header .bottom-pane #social-list ul li .icon.facebook,
+#header .bottom-pane #social-list ul li .icon.twitter {
+  width: 30px;
+  height: 29px;
+}
+#header .name-pane {
+  position: absolute;
+  left: 100px;
+  top: 20px;
+  width: 445px;
+  height: 110px;
+  border: 3px solid #888;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e2e2e2), color-stop(0.33333333333333326, #888), color-stop(1, #e2e2e2));
+  background: -webkit-linear-gradient(top, #e2e2e2 0%, #888 33.33333333333333%, #e2e2e2 100%);
+  background: -moz-linear-gradient(top, #e2e2e2 0%, #888 33.33333333333333%, #e2e2e2 100%);
+  background: -o-linear-gradient(top, #e2e2e2 0%, #888 33.33333333333333%, #e2e2e2 100%);
+  background: -ms-linear-gradient(top, #e2e2e2 0%, #888 33.33333333333333%, #e2e2e2 100%);
+  background: linear-gradient(top, #e2e2e2 0%, #888 33.33333333333333%, #e2e2e2 100%);
+}
+#header .name-pane > div {
+  font-family: 'Shojumaru';
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 27px;
+  font-size: 60px;
+  line-height: 60px;
+}
+#left-content {
+  position: relative;
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 60px;
+  width: 600px;
+  height: 400px;
+}
+#left-content #profile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+#left-content #profile > img {
+  width: inherit;
+  height: inherit;
+}
+#left-content #blurb {
+  position: absolute;
+  top: 0;
+  left: 210px;
+  width: 385px;
+  height: 200px;
+  margin-left: 10px;
+}
+#right-content {
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+  width: 320px;
+  height: 400px;
+}
+#right-content #social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 200px;
+}
+footer {
+  margin-left: 100px;
 }
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
