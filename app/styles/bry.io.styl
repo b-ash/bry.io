@@ -1,0 +1,181 @@
+// Original design: This is me (dark) (v1.2 - Sep 12, 2012) - A free xhtml/css website template for andreasviklund.com.
+// For more information, see http://andreasviklund.com/templates/this-is-me-dark/
+@import nib
+@import transitions
+*
+    border: 0
+    font: inherit
+    font-size: 100%
+    margin: 0
+    padding: 0
+    vertical-align: baseline
+
+body
+    background-color: #fafafa
+    color: #646464
+    font: 14px/18px Cabin, Helvetica, Arial, sans-serif
+
+ol, ul
+    margin: 0
+    padding: 0
+
+    list-style: none
+    list-style-image: none
+    list-style-position: outside
+    list-style-type: none
+
+a img
+    border: none
+
+a
+    color: #000
+    text-decoration: none
+
+a:hover, a:focus
+    color: #666
+    text-decoration: underline
+
+p
+    font-family: Cabin, sans-serif
+    padding: 0 30px 10px
+
+h2
+    color: #333
+    font: 22px Cabin, sans-serif
+    padding: 6px 0 10px
+
+#mainwrap
+    margin: 0 auto
+    overflow: hidden
+    position: relative
+    width: 640px
+
+#cardstyle
+    background-color: #fff
+    border: 1px solid #d4d4d4
+    margin: 75px auto 20px
+    overflow: hidden
+    padding: 6px
+    position: relative
+    width: 600px
+
+#content
+    background-color: #fafafa
+    position: relative
+    width: 600px
+
+#pagecontainer
+    position: relative
+
+.section
+    position: relative
+
+    &:last-child
+        padding-bottom: 10px
+
+#start
+    padding: 10px 0 10px
+    
+    h1
+        color: #2e6dd1
+        font: normal 90px Allura, Helvetica
+        line-height: 0.9em
+        margin: 0
+        padding: 10px 0
+        text-align: center
+        text-shadow: 0 1px 0 #fff
+
+    p.tagline
+        color: #68F
+        font-size: 16px
+        text-align: center
+
+    .profile
+        border-radius(50%)
+        width: 130px
+        height: 130px
+        margin: 0 auto 10px
+        background: url(/static/images/bash.jpg)
+
+    p.blurb
+        a
+            color: #FE7722
+            transition color 0.4s ease-in
+            font-weight: bold
+
+            &:hover, &:focus
+                color: #68F
+
+#social 
+    li
+        display: inline-block
+        height: 46px
+        width: 145px
+
+        > div
+            width: 70px
+            margin: 0 38px
+        
+        a
+            color: #666
+
+            &:hover, &:focus
+                color: #333
+                text-decoration: none
+
+            > div
+                width: 70px
+                transition top 0.4s
+                text-align: center
+
+                &:hover, &:focus
+                    position: relative
+                    top: -5px
+                    padding-bottom: 5px
+                
+                strong
+                    color: #333
+                    display: block
+                    font-size: 14px
+                    font-weight: 700
+
+#footer
+    color: #999
+    text-align: center
+    width: 100%
+    margin-bottom: 10px
+
+    a
+        color: #999
+
+body.inverted
+    background-color: #1a1a1a
+    color: #e0e0e0
+    
+    #cardstyle
+        background-color: #101010
+        border: 1px solid #2a2a2a
+    
+    #content 
+        background-color: #181818
+
+    h2 
+        color: #eee
+    #start h1 
+        color: #ddd
+        text-shadow: 0 1px 0 #111
+    #bio img 
+        box-shadow(0px, 0px, 2px, #000)
+        border: 3px solid #111
+
+    #social 
+        li a 
+            color: #ddd
+        strong 
+            color: #eee
+
+    #footer, #footer a
+        color: #777
+
+    a 
+        color: #ddd

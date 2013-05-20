@@ -61,20 +61,25 @@
     throw new Error('Cannot find module "' + name + '"');
   };
 
-  var define = function(bundle) {
-    for (var key in bundle) {
-      if (has(bundle, key)) {
-        modules[key] = bundle[key];
+  var define = function(bundle, fn) {
+    if (typeof bundle === 'object') {
+      for (var key in bundle) {
+        if (has(bundle, key)) {
+          modules[key] = bundle[key];
+        }
       }
+    } else {
+      modules[bundle] = fn;
     }
-  }
+  };
 
   globals.require = require;
   globals.require.define = define;
+  globals.require.register = define;
   globals.require.brunch = true;
 })();
 
-window.require.define({"coffee/index": function(exports, require, module) {
+window.require.register("coffee/index", function(exports, require, module) {
   var $;
 
   $ = jQuery;
@@ -83,5 +88,4 @@ window.require.define({"coffee/index": function(exports, require, module) {
     return console.log('success');
   });
   
-}});
-
+});

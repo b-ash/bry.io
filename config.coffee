@@ -19,13 +19,10 @@ module.exports.config =
             order:
                 before: [
                     'vendor/styles/normalize.css'
-                    'vendor/styles/template.css'
-                ]
-                after: [
                     'vendor/styles/helpers.css'
                 ]
 
-    minify: no
+    minify: yes
 
     server:
         path: 'app.coffee'

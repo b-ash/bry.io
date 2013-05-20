@@ -1,0 +1,59 @@
+@import nib
+
+@-webkit-keyframes heartbeat
+    0%
+        transform scale(1.0)
+    4%
+        transform scale(1.1)
+    8%
+        transform scale(1.0)
+    12%
+        transform scale(1.1)
+    16%
+        transform scale(1.0)
+
+    22%
+        transform scale(1.0)
+    26%
+        transform scale(1.1)
+    30%
+        transform scale(1.0)
+
+    32%
+        transform scale(1.0)
+    36%
+        transform scale(1.1)
+    40%
+        transform scale(1.0)
+    44%
+        transform scale(1.1)
+    48%
+        transform scale(1.0)
+
+    60%
+        transform scale(1.0)
+    64%
+        transform scale(1.1)
+    68%
+        transform scale(1.0)
+    72%
+        transform scale(1.1)
+    76%
+        transform scale(1.0)
+
+    80%
+        transform scale(1.0)
+    84%
+        transform scale(1.1)
+    88%
+        transform scale(1.0)
+
+
+#start .profile
+    &:hover, &:focus
+        -webkit-animation heartbeat 4s
+        -webkit-animation-iteration-count infinite
+        -moz-animation heartbeat 5s
+        -moz-animation-iteration-count infinite
+        animation heartbeat 5s
+        animation-iteration-count infinite
