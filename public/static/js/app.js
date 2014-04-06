@@ -78,10 +78,6 @@ window.require.define({"coffee/index": function(exports, require, module) {
   var $;
 
   $ = jQuery;
-
-  $(function() {
-    return console.log('success');
-  });
   
 }});
 

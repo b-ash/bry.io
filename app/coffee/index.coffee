@@ -1,4 +1,1 @@
 $ = jQuery
-
-$ ->
-    console.log 'success'
