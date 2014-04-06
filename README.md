@@ -1,1 +1,3 @@
-Yeah, this project is really just a placeholder at the moment.
+## Bry.io
+
+Code that powers http://bry.io. Brunch is used to build and assemble the code.
